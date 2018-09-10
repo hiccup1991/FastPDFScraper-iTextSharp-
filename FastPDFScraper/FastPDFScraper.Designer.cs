@@ -34,6 +34,7 @@
             this.btnOpenKeywordFile = new System.Windows.Forms.Button();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.btnPrintResult = new System.Windows.Forms.Button();
+            this.progressReport = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOpenPDFFolder
@@ -80,7 +81,7 @@
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(12, 336);
+            this.progressBar.Location = new System.Drawing.Point(12, 367);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(567, 23);
             this.progressBar.TabIndex = 4;
@@ -95,11 +96,20 @@
             this.btnPrintResult.UseVisualStyleBackColor = true;
             this.btnPrintResult.Click += new System.EventHandler(this.btnPrintResult_Click);
             // 
+            // progressReport
+            // 
+            this.progressReport.AutoSize = true;
+            this.progressReport.Location = new System.Drawing.Point(12, 326);
+            this.progressReport.Name = "progressReport";
+            this.progressReport.Size = new System.Drawing.Size(0, 13);
+            this.progressReport.TabIndex = 6;
+            // 
             // FastPDFScraper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(591, 474);
+            this.Controls.Add(this.progressReport);
             this.Controls.Add(this.btnPrintResult);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.btnOpenKeywordFile);
@@ -121,6 +131,7 @@
         private System.Windows.Forms.Button btnOpenKeywordFile;
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Button btnPrintResult;
+        private System.Windows.Forms.Label progressReport;
     }
 }
 
